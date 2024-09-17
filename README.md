@@ -49,7 +49,7 @@ The project was implemented using Xilinx as a training exercise to apply the con
 
 ## How to Run
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
    cd Simple-VHDL-Calculator
 ```
