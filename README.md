@@ -52,7 +52,7 @@ The project was implemented using Xilinx as a training exercise to apply the con
    ```bash
    git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
    cd Simple-VHDL-Calculator
-
+```
     Open the project in your preferred VHDL development environment (e.g., Xilinx ISE, Vivado, or ModelSim).
     Compile the VHDL source files and the testbench.
     Run the simulation for the testbench file.
