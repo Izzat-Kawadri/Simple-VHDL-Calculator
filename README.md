@@ -53,9 +53,7 @@ The project was implemented using Xilinx as a training exercise to apply the con
    - The testbench will apply various input combinations (operands and operation selections) and check the results for correctness.
    - Simulate the design using a VHDL simulator, and ensure the calculator works for all combinations of operations.
    
----
-
-### Running the Simulation
+## Running the Simulation
 After compiling the VHDL source files and testbench in your development environment, run the testbench simulation. The input values for operands `0` ,`5` ,`10` ,`20` ,`30` and `50` will be applied to all four operations.
 - For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
 
@@ -70,7 +68,7 @@ Observe the simulation results to confirm the correctness of each operation:
 
 ---
 
-## How to Run
+## Getting Started
 1. Clone the repository:
    git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
 2. cd Simple-VHDL-Calculator
