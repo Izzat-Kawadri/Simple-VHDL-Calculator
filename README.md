@@ -49,8 +49,8 @@ The project was implemented using Xilinx as a training exercise to apply the con
 
 ## How to Run
 1. Clone the repository:
-  git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
-  cd Simple-VHDL-Calculator
+ - git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
+ - cd Simple-VHDL-Calculator
 
 2. Open the project in your preferred VHDL development environment (e.g., Xilinx ISE, Vivado, or ModelSim).
 3. Compile the VHDL source files and the testbench.
