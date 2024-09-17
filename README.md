@@ -49,29 +49,25 @@ The project was implemented using Xilinx as a training exercise to apply the con
 
 ## How to Run
 1. Clone the repository:
- git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
- cd Simple-VHDL-Calculator
+  git clone https://github.com/Izzat-Kawadri/Simple-VHDL-Calculator.git
+  cd Simple-VHDL-Calculator
 
-2.Open the project in your preferred VHDL development environment (e.g., Xilinx ISE, Vivado, or ModelSim).
-3.Compile the VHDL source files and the testbench.
-4.Run the simulation for the testbench file.
-5.Verify the output waveforms or results in the simulation log.
+2. Open the project in your preferred VHDL development environment (e.g., Xilinx ISE, Vivado, or ModelSim).
+3. Compile the VHDL source files and the testbench.
+4. Run the simulation for the testbench file.
+5. Verify the output waveforms or results in the simulation log.
 
 ## Files in the Repository
-
-    calculator.vhdl: Top-level entity for the calculator.
-    adder.vhdl: VHDL code for the addition module.
-    subtractor.vhdl: VHDL code for the subtraction module.
-    multiplier.vhdl: VHDL code for the multiplication module.
-    divider.vhdl: VHDL code for the division module.
-    testbench.vhdl: Testbench for simulating and verifying the calculator’s functionality.
+- **calculator.vhdl**: Top-level entity for the calculator.
+- **adder.vhdl**: VHDL code for the addition module.
+- **subtractor.vhdl**: VHDL code for the subtraction module.
+- **multiplier.vhdl**: VHDL code for the multiplication module.
+- **divider.vhdl**: VHDL code for the division module.
+- **testbench.vhdl**: Testbench for simulating and verifying the calculator’s functionality.
 
 ## Future Improvements
-
-    Extend the calculator to support more complex operations such as modulus or power functions.
-    Optimize the architecture for better performance or lower hardware resource usage.
-    Implement pipelining or other techniques to enhance the throughput of the calculator.
-
-
-
-This project was implemented in Xilinx as a training project to practice and apply the VHDL concepts learned during my college course.
+- Extend the calculator to support more complex operations such as modulus or power functions.
+- Optimize the architecture for better performance or lower hardware resource usage.
+- Implement pipelining or other techniques to enhance the throughput of the calculator.
+---
+- This project was implemented in Xilinx as a training project to practice and apply the VHDL concepts learned during my college course.
