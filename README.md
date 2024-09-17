@@ -6,11 +6,15 @@ This project involves designing a calculator using VHDL that can perform basic a
 
 The project was implemented using Xilinx as a training exercise to apply the concepts learned from a VHDL course taken in college.
 
+---
+
 ## Features
 - **Basic Arithmetic Operations**: Addition, Subtraction, Multiplication, and Division.
 - **Top-Level Entity**: A calculator with input and output ports for operands, operation selection, and result output.
 - **Component-Based Design**: Separate entities for each arithmetic operation to improve modularity and ease of testing.
 - **Simulation and Verification**: A testbench is provided to simulate the functionality of the calculator with different inputs and operations.
+
+---
 
 ## Project Structure
 
@@ -38,39 +42,40 @@ The project was implemented using Xilinx as a training exercise to apply the con
 5. **Top-Level Architecture**:
    - Instantiate all four operation components within the top-level calculator entity.
    - Use a `case` statement to select the appropriate operation based on the `op` input:
-     - `op = 00`: Addition
-     - `op = 01`: Subtraction
-     - `op = 10`: Multiplication
-     - `op = 11`: Division
+     0. `op = 00`: Addition
+     1. `op = 01`: Subtraction
+     2. `op = 10`: Multiplication
+     3. `op = 11`: Division
    - Route the operands and result between the components and the calculator entity.
 
 6. **Testbench**:
    - Write a testbench to verify the functionality of the calculator.
    - The testbench will apply various input combinations (operands and operation selections) and check the results for correctness.
    - Simulate the design using a VHDL simulator, and ensure the calculator works for all combinations of operations.
-   - To verify the functionality of the calculator, the testbench simulates basic operations using the input values 10 and 20 for the following operations:
+   - To verify the functionality of the calculator, the testbench simulates basic operations using the input values `0` ,`5` ,`10` ,`20` ,`30` and `50` for the following operations:
 
-      - Addition (10 + 20):
-          Expected Result: 30
-      - Subtraction (10 - 20):
-          Expected Result: -10
-      - Multiplication (10 * 20):
-          Expected Result: 200
-      - Division (10 / 20):
-          Expected Result: 0 (as integer division truncates the result to the nearest whole number)
+- **Addition (10 + 20)**: Expected Result: `30`
+- **Subtraction (30 - 10)**: Expected Result: `20`
+- **Multiplication (10 * 5)**: Expected Result: `50`
+- **Division (50 / 10)**: Expected Result: `5`
 
-    - Running the Simulation
-       After compiling the VHDL source files and testbench in your development environment, run the testbench simulation.
-    The input values for operands 10 and 20 will be applied to all four operations.
-    Observe the simulation results to confirm the correctness of each operation:
-        For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
+---
 
-    You should see the following results for each operation:
-        Addition: Result = 30
-        Subtraction: Result = -10
-        Multiplication: Result = 200
-        Division: Result = 0
+### Running the Simulation
+After compiling the VHDL source files and testbench in your development environment, run the testbench simulation. The input values for operands `10` and `20` will be applied to all four operations.
+
+Observe the simulation results to confirm the correctness of each operation:
+- For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
+
+You should see the following results for each operation:
+- **Addition**: Result = `30`
+- **Subtraction**: Result = `20`
+- **Multiplication**: Result = `50`
+- **Division**: Result = `5`
+
    ![Simulation Image](./simulation.png)
+
+---
 
 ## How to Run
 1. Clone the repository:
@@ -81,6 +86,8 @@ The project was implemented using Xilinx as a training exercise to apply the con
 5. Run the simulation for the testbench file.
 6. Verify the output waveforms or results in the simulation log.
 
+---
+
 ## Files in the Repository
 - **calculator.vhdl**: Top-level entity for the calculator.
 - **adder.vhdl**: VHDL code for the addition module.
@@ -89,9 +96,9 @@ The project was implemented using Xilinx as a training exercise to apply the con
 - **divider.vhdl**: VHDL code for the division module.
 - **cal.vhdl**: Testbench for simulating and verifying the calculator’s functionality.
 
+---
+
 ## Future Improvements
 - Extend the calculator to support more complex operations such as modulus or power functions.
 - Optimize the architecture for better performance or lower hardware resource usage.
-- Implement pipelining or other techniques to enhance the throughput of the calculator.
----
-- This project was implemented in Xilinx as a training project to practice and apply the VHDL concepts learned during my college course.
+
