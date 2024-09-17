@@ -42,37 +42,30 @@ The project was implemented using Xilinx as a training exercise to apply the con
 5. **Top-Level Architecture**:
    - Instantiate all four operation components within the top-level calculator entity.
    - Use a `case` statement to select the appropriate operation based on the `op` input:
-     0. `op = 00`: Addition
-     1. `op = 01`: Subtraction
-     2. `op = 10`: Multiplication
-     3. `op = 11`: Division
+     - `op = 00`: Addition
+     - `op = 01`: Subtraction
+     - `op = 10`: Multiplication
+     - `op = 11`: Division
    - Route the operands and result between the components and the calculator entity.
 
 6. **Testbench**:
    - Write a testbench to verify the functionality of the calculator.
    - The testbench will apply various input combinations (operands and operation selections) and check the results for correctness.
    - Simulate the design using a VHDL simulator, and ensure the calculator works for all combinations of operations.
-   - To verify the functionality of the calculator, the testbench simulates basic operations using the input values `0` ,`5` ,`10` ,`20` ,`30` and `50` for the following operations:
+   
+---
 
+### Running the Simulation
+After compiling the VHDL source files and testbench in your development environment, run the testbench simulation. The input values for operands `0` ,`5` ,`10` ,`20` ,`30` and `50` will be applied to all four operations.
+- For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
+
+You should see the following results for each operation:
 - **Addition (10 + 20)**: Expected Result: `30`
 - **Subtraction (30 - 10)**: Expected Result: `20`
 - **Multiplication (10 * 5)**: Expected Result: `50`
 - **Division (50 / 10)**: Expected Result: `5`
 
----
-
-### Running the Simulation
-After compiling the VHDL source files and testbench in your development environment, run the testbench simulation. The input values for operands `10` and `20` will be applied to all four operations.
-
 Observe the simulation results to confirm the correctness of each operation:
-- For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
-
-You should see the following results for each operation:
-- **Addition**: Result = `30`
-- **Subtraction**: Result = `20`
-- **Multiplication**: Result = `50`
-- **Division**: Result = `5`
-
    ![Simulation Image](./simulation.png)
 
 ---
