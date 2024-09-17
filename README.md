@@ -48,6 +48,28 @@ The project was implemented using Xilinx as a training exercise to apply the con
    - Write a testbench to verify the functionality of the calculator.
    - The testbench will apply various input combinations (operands and operation selections) and check the results for correctness.
    - Simulate the design using a VHDL simulator, and ensure the calculator works for all combinations of operations.
+   - To verify the functionality of the calculator, the testbench simulates basic operations using the input values 10 and 20 for the following operations:
+
+      - Addition (10 + 20):
+          Expected Result: 30
+      - Subtraction (10 - 20):
+          Expected Result: -10
+      - Multiplication (10 * 20):
+          Expected Result: 200
+      - Division (10 / 20):
+          Expected Result: 0 (as integer division truncates the result to the nearest whole number)
+
+    - Running the Simulation
+       After compiling the VHDL source files and testbench in your development environment, run the testbench simulation.
+    The input values for operands 10 and 20 will be applied to all four operations.
+    Observe the simulation results to confirm the correctness of each operation:
+        For each operation, the result of the calculation will be output, and the waveform or log should show the expected results as listed above.
+
+    You should see the following results for each operation:
+        Addition: Result = 30
+        Subtraction: Result = -10
+        Multiplication: Result = 200
+        Division: Result = 0
    ![Simulation Image](./simulation.png)
 
 ## How to Run
